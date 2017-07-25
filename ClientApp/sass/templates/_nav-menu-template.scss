@@ -1,0 +1,19 @@
+﻿.main-nav {
+    & li {
+        .fa {
+            margin-right: 10px;
+        }
+
+        [class*="devicon-"] {
+            margin-right: 10px;
+        }
+
+        & a.active, a.active:hover, a.active:focus {
+            background-color: #4189C7;
+            color: white;
+        }
+    }
+    .navbar-brand {
+        font-family: $code-font;
+    }
+}

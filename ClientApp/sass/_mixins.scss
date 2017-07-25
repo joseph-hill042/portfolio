@@ -1,0 +1,26 @@
+﻿// Convert pixels to ems
+$browser-context: 16;
+
+@function em($pixels, $context: $browser-context) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+
+    @return $pixels / $context * 1em;
+}
+
+// Set heading sizes
+/* Create a step size. */
+/* This is the percentage each heading will be reduced by. */
+$step-size-heading: 0.33333;
+/* Amplifier value */
+$amplifier-heading: 1.5;
+/* The mixin */
+@mixin heading-size($size) {
+    font-size: $size * $step-size-heading * $amplifier-heading + em;
+}
+

@@ -1,0 +1,17 @@
+﻿// Import sitewide variables
+@import '_variables.scss';
+
+// Import sitewide mixins
+@import '_mixins.scss';
+
+// Import globally applied styling to html elements
+@import '_globals.scss';
+
+// Import styled reusable elements
+
+// Import template specific styling
+@import 'templates/_nav-menu-template.scss';// The associated styles for the nav bar component
+@import 'templates/_home-page-template.scss';// The associated styles for the home page component
+@import 'templates/_my-work-template.scss';// The associated styles for the my work component
+@import 'templates/_javascript-template.scss';// The associated styles for the javascript component
+

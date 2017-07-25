@@ -1,11 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>@ViewData["Title"] - portfolio</title>
+        <title>@ViewData["Title"] - Joseph Hill</title>
 
         <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css" asp-append-version="true" />
         <environment names="Staging,Production">
             <link rel="stylesheet" href="~/dist/site.css" asp-append-version="true" />
         </environment>
@@ -14,6 +16,7 @@
         @RenderBody()
 
         <script src="~/dist/vendor.js" asp-append-version="true"></script>
+        <script src="https://use.fontawesome.com/04ee8b95fb.js" asp-append-version="true"></script>
         @RenderSection("scripts", required: false)
     </body>
 </html>

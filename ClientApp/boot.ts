@@ -1,4 +1,4 @@
-import './css/site.css';
+import './sass/style.min.css';
 import 'bootstrap';
 import * as ko from 'knockout';
 import './webpack-component-loader';

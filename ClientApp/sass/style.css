@@ -1,0 +1,56 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Eczar|Gentium+Basic");
+/* Create a step size. */
+/* This is the percentage each heading will be reduced by. */
+/* Amplifier value */
+/* The mixin */
+body {
+  font-family: "Gentium Basic"; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Eczar"; }
+
+h1 {
+  font-size: 2.99997em; }
+
+h2 {
+  font-size: 2.49998em; }
+
+h3 {
+  font-size: 1.99998em; }
+
+h4 {
+  font-size: 1.49999em; }
+
+h5 {
+  font-size: 0.99999em; }
+
+h6 {
+  font-size: 0.5em; }
+
+.main-nav li .fa {
+  margin-right: 10px; }
+
+.main-nav li [class*="devicon-"] {
+  margin-right: 10px; }
+
+.main-nav li a.active, .main-nav li a.active:hover, .main-nav li a.active:focus {
+  background-color: #4189C7;
+  color: white; }
+
+.main-nav .navbar-brand {
+  font-family: "Fira Code"; }
+
+.home-page .jumbotron {
+  margin-top: -50px;
+  background: url("~/dist/images/hero-view.jpg") center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  max-height: 450px;
+  padding-bottom: 450px;
+  margin-bottom: 0px; }
+
+.home-page .tagline {
+  font-family: "Fira Code"; }
+
