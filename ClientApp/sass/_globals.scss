@@ -1,11 +1,13 @@
 ﻿//Set primary font
 body {
     font-family: $primary-font;
+    color: $white;
 }
 
 // Set heading fonts and sizes
 h1,h2,h3,h4,h5 {
     font-family: $heading-font;
+    color: $white;
 }
 
 h1 {
@@ -30,4 +32,9 @@ h5 {
 
 h6 {
     @include heading-size(1);
+}
+
+p {
+    color: $white;
+    font-size: em(18);
 }

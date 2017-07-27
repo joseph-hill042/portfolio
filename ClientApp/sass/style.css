@@ -4,10 +4,12 @@
 /* Amplifier value */
 /* The mixin */
 body {
-  font-family: "Gentium Basic"; }
+  font-family: "Gentium Basic";
+  color: #eee; }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Eczar"; }
+  font-family: "Eczar";
+  color: #eee; }
 
 h1 {
   font-size: 2.99997em; }
@@ -27,15 +29,21 @@ h5 {
 h6 {
   font-size: 0.5em; }
 
-.main-nav li .fa {
-  margin-right: 10px; }
+p {
+  color: #eee;
+  font-size: 1.125em; }
 
-.main-nav li [class*="devicon-"] {
-  margin-right: 10px; }
-
-.main-nav li a.active, .main-nav li a.active:hover, .main-nav li a.active:focus {
-  background-color: #4189C7;
-  color: white; }
+.main-nav li {
+  font-size: 1.125em; }
+  .main-nav li a:hover {
+    color: #caf37b; }
+  .main-nav li .fa {
+    margin-right: 10px; }
+  .main-nav li [class*="devicon-"] {
+    margin-right: 10px; }
+  .main-nav li a.active, .main-nav li a.active:hover, .main-nav li a.active:focus {
+    background-color: #333;
+    color: #6495ed; }
 
 .main-nav .navbar-brand {
   font-family: "Fira Code"; }
@@ -51,6 +59,20 @@ h6 {
   padding-bottom: 450px;
   margin-bottom: 0px; }
 
-.home-page .tagline {
+.home-page__tagline {
   font-family: "Fira Code"; }
+
+.home-page__about-section {
+  background: url("~/dist/images/bg-5.jpg") center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1020px;
+  width: 80%;
+  padding-bottom: 100px;
+  color: #eee;
+  margin: auto; }
+
+.home-page__skills-section [class*="devicon-"] {
+  font-size: 3.25em;
+  color: cornflowerblue; }
 

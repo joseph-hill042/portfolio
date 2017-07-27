@@ -11,7 +11,26 @@
         padding-bottom: 450px;
         margin-bottom: 0px;
     }
-    .tagline {
+
+    &__tagline {
         font-family: $code-font;
+    }
+
+    &__about-section {
+        background: url('~/dist/images/bg-5.jpg') center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 1020px;
+        width: 80%;
+        padding-bottom: 100px;
+        color: #eee;
+        margin: auto;
+    }
+
+    &__skills-section {
+        [class*="devicon-"] {
+            font-size: em(52);
+            color: cornflowerblue;
+        }
     }
 }

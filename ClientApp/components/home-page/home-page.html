@@ -1,11 +1,33 @@
 <div class="home-page">
     <div class="jumbotron"></div>
-    <header>
-        <h1 class="text-center tagline">let josephHill = () => frontEndDev;</h1>
-    </header>
-    <div >
-        
-    </div>
+    <main>
+        <header>
+            <h1 class="text-center home-page__tagline">let josephHill = () => frontEndDev;</h1>
+        </header>
+        <section class="home-page__about-section">
+            <div class="row">
+                <div class="col-sm-4 side-about text-center">
+                    <h2>About Me</h2>
+                    <p>I am a lover of all things tech and superhero related. I enjoy solving problems and coming up with unique solutions to meet a client's need.</p>
+                </div>
+                <div class="col-sm-8 main-about text-center">
+                    <h2>Why I Do What I Do</h2>
+                    <p>I am foremost a father and husband. I strive everyday to give my family the best future possible. They are my inspiration and my strength! I also just love programming and development in general. I really enjoy coding and building new things.</p>
+                </div>
+            </div>
+        </section>
+        <section class="home-page__skills-section text-center">
+            <h2>Skills</h2>
+            <div class="row">
+                <div data-bind="foreach: skillIcons">
+                    <div class="col-sm-3 col-xs-4">
+                        <i data-bind="attr: {class: devicon}"></i>
+                        <p data-bind="text: title"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </div>
 
 
