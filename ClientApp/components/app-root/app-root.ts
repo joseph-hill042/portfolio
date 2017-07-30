@@ -2,11 +2,12 @@ import * as ko from 'knockout';
 import * as History from 'history';
 import { Route, Router } from '../../router';
 import navMenu from '../nav-menu/nav-menu';
+import mainFooter from '../footer/main-footer';
 
 // Declare the client-side routing configuration
 const routes: Route[] = [
     { url: '',              params: { page: 'home-page' } },
-    { url: 'counter',       params: { page: 'counter-example' } },
+    { url: 'my-work',       params: { page: 'my-work' } },
     { url: 'fetch-data',    params: { page: 'fetch-data' } }
 ];
 
@@ -24,8 +25,9 @@ class AppRootViewModel {
         // to be split into separate files that are then loaded on demand.
         // For docs, see https://github.com/webpack/bundle-loader
         ko.components.register('nav-menu', navMenu);
+        ko.components.register('main-footer', mainFooter);
         ko.components.register('home-page', require('bundle-loader?lazy!../home-page/home-page'));
-        ko.components.register('counter-example', require('bundle-loader?lazy!../counter-example/counter-example'));
+        ko.components.register('my-work', require('bundle-loader?lazy!../my-work/my-work'));
         ko.components.register('fetch-data', require('bundle-loader?lazy!../fetch-data/fetch-data'));
     }
 

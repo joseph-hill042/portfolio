@@ -33,6 +33,14 @@ p {
   color: #eee;
   font-size: 1.125em; }
 
+@keyframes mirror-flip {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(-1, 1); }
+  100% {
+    transform: scale(1, 1); } }
+
 .main-nav li {
   font-size: 1.125em; }
   .main-nav li a:hover {
@@ -48,8 +56,18 @@ p {
 .main-nav .navbar-brand {
   font-family: "Fira Code"; }
 
+.main-footer {
+  background: #333;
+  padding: 5px 0 2.5px;
+  font-size: 1.5em; }
+  .main-footer .copyright {
+    color: #6495ed;
+    font-size: 1.5em;
+    display: inline-block;
+    animation: mirror-flip 3s infinite; }
+
 .home-page .jumbotron {
-  margin-top: -50px;
+  margin-top: -70px;
   background: url("~/dist/images/hero-view.jpg") center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -66,13 +84,22 @@ p {
   background: url("~/dist/images/bg-5.jpg") center center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1020px;
   width: 80%;
-  padding-bottom: 100px;
+  padding: 90px 0 100px;
   color: #eee;
   margin: auto; }
+  .home-page__about-section > .row {
+    margin: auto; }
 
 .home-page__skills-section [class*="devicon-"] {
   font-size: 3.25em;
   color: cornflowerblue; }
+
+.my-work__portfolio-grid .container {
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%; }
+
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
 

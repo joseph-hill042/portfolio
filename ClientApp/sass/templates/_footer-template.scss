@@ -1,0 +1,13 @@
+﻿.main-footer {
+    background: $grey;
+    padding: 5px 0 2.5px;
+    font-size: 1.5em;
+
+    .copyright {
+        color: $primary-blue;
+        font-size: 1.5em;
+        display: inline-block;
+        animation: mirror-flip 3s infinite;
+    }
+
+}

@@ -1,7 +1,7 @@
 ﻿// Styling for home page component
 .home-page {
     .jumbotron {
-        margin-top: -50px;
+        margin-top: -70px;
         background: url('~/dist/images/hero-view.jpg') center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -20,11 +20,14 @@
         background: url('~/dist/images/bg-5.jpg') center center;
         background-repeat: no-repeat;
         background-size: cover;
-        max-width: 1020px;
         width: 80%;
-        padding-bottom: 100px;
+        padding: 90px 0 100px;
+        //padding-bottom: 100px;
         color: #eee;
         margin: auto;
+        &>.row {
+            margin: auto;
+        }
     }
 
     &__skills-section {

@@ -16,23 +16,23 @@ class HomePageViewModel {
             devicon: 'devicon-javascript-plain'
         },
         {
-            title: 'Chrome Dev Tools',
+            title: 'Dev Tools',
             devicon:'devicon-chrome-plain'
         },
         {
-            title: 'WebStorm IDE',
+            title: 'WebStorm',
             devicon: 'devicon-webstorm-plain'
         },
         {
-            title: 'PhpStorm IDE',
+            title: 'PhpStorm',
             devicon: 'devicon-phpstorm-plain'
         },
         {
-            title: 'Visual Studio IDE',
+            title: 'Visual Studio',
             devicon: 'devicon-visualstudio-plain'
         },
         {
-            title: 'Atom Text Editor',
+            title: 'Atom',
             devicon: 'devicon-atom-original'
         },
         {
@@ -96,15 +96,15 @@ class HomePageViewModel {
             devicon: 'devicon-wordpress-plain'
         },
         {
-            title: 'Gulp Task Runner',
+            title: 'Gulpjs',
             devicon: 'devicon-gulp-plain'
         },
         {
-            title: 'Webpack Module Bundler',
+            title: 'Webpack',
             devicon: 'devicon-webpack-plain'
         },
         {
-            title: 'Gimp Image Editor',
+            title: 'Gimp',
             devicon: 'devicon-gimp-plain'
         },
         {
@@ -116,7 +116,7 @@ class HomePageViewModel {
             devicon: 'devicon-github-plain'
         },
         {
-            title: 'Amazon Web Services',
+            title: 'AWS',
             devicon: 'devicon-amazonwebservices-original'
         },
         {

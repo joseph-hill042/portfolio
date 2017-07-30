@@ -1,0 +1,5 @@
+﻿// Override bootstrap container fluid styling to remove left and right padding
+.container-fluid {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
