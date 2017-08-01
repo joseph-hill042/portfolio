@@ -10,6 +10,8 @@ const routes: Route[] = [
     { url: 'my-work', params: { page: 'my-work' } },
     { url: 'oakwood', params: { page: 'oakwood' } },
     { url: 'skraach', params: { page: 'skraach' } },
+    { url: 'vafb', params: { page: 'vafb' } },
+    { url: 'bhrsc', params: { page: 'bhrsc' } },
     { url: 'fetch-data',    params: { page: 'fetch-data' } }
 ];
 
@@ -32,6 +34,8 @@ class AppRootViewModel {
         ko.components.register('my-work', require('bundle-loader?lazy!../my-work/my-work'));
         ko.components.register('oakwood', require('bundle-loader?lazy!../oakwood/oakwood'));
         ko.components.register('skraach', require('bundle-loader?lazy!../skraach/skraach'));
+        ko.components.register('vafb', require('bundle-loader?lazy!../vafb/vafb'));
+        ko.components.register('bhrsc', require('bundle-loader?lazy!../bhrsc/bhrsc'));
         ko.components.register('fetch-data', require('bundle-loader?lazy!../fetch-data/fetch-data'));
     }
 
