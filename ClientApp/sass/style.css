@@ -178,6 +178,11 @@ p {
 .vafb a {
   text-decoration-color: #8a2432; }
 
+.about-me {
+  padding: 0 20px 20px; }
+  .about-me .col-text {
+    padding-top: 60px; }
+
 .container-fluid {
   padding-left: 0 !important;
   padding-right: 0 !important; }

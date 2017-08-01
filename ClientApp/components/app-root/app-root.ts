@@ -12,7 +12,7 @@ const routes: Route[] = [
     { url: 'skraach', params: { page: 'skraach' } },
     { url: 'vafb', params: { page: 'vafb' } },
     { url: 'bhrsc', params: { page: 'bhrsc' } },
-    { url: 'fetch-data',    params: { page: 'fetch-data' } }
+    { url: 'about-me',    params: { page: 'about-me' } }
 ];
 
 class AppRootViewModel {
@@ -36,7 +36,7 @@ class AppRootViewModel {
         ko.components.register('skraach', require('bundle-loader?lazy!../skraach/skraach'));
         ko.components.register('vafb', require('bundle-loader?lazy!../vafb/vafb'));
         ko.components.register('bhrsc', require('bundle-loader?lazy!../bhrsc/bhrsc'));
-        ko.components.register('fetch-data', require('bundle-loader?lazy!../fetch-data/fetch-data'));
+        ko.components.register('about-me', require('bundle-loader?lazy!../about-me/about-me'));
     }
 
     // To support hot module replacement, this method unregisters the router and KO components.
