@@ -1,8 +1,21 @@
 ﻿.my-work {
-    &__portfolio-grid {
-        .container {
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 50% 50%;
+    padding: 20px;
+
+
+    &__portfolio-section {
+        //background: linear-gradient(#96deda, #50c9c3);
+        padding: 30px;
+
+        .portfolio-item {
+            padding: 10px 10px;
+        }
+
+        .btn {
+            margin-top: 10px;
+        }
+
+        h2 {
+            //color: black;
         }
     }
 }

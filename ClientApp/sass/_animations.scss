@@ -12,3 +12,25 @@
         transform: scale(1, 1)
     }
 }
+
+/* The typing animation effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor animation effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}

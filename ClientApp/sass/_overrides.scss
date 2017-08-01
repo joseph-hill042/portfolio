@@ -3,3 +3,30 @@
     padding-left: 0!important;
     padding-right: 0!important;
 }
+
+// Bootstrap carousel overrides
+.carousel {
+
+    .carousel-indicators {
+        li {
+            &.active {
+                background-color: $primary-blue;
+            }
+            border: 1px solid $primary-blue;
+        }
+    }
+    .carousel-control {
+
+        .glyphicon {
+            color: $primary-blue;
+        }
+
+        &.left {
+            background-image: none !important;
+        }
+
+        &.right {
+            background-image: none !important;
+        }
+    }
+}

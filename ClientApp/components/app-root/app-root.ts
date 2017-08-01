@@ -7,7 +7,9 @@ import mainFooter from '../footer/main-footer';
 // Declare the client-side routing configuration
 const routes: Route[] = [
     { url: '',              params: { page: 'home-page' } },
-    { url: 'my-work',       params: { page: 'my-work' } },
+    { url: 'my-work', params: { page: 'my-work' } },
+    { url: 'oakwood', params: { page: 'oakwood' } },
+    { url: 'skraach', params: { page: 'skraach' } },
     { url: 'fetch-data',    params: { page: 'fetch-data' } }
 ];
 
@@ -28,6 +30,8 @@ class AppRootViewModel {
         ko.components.register('main-footer', mainFooter);
         ko.components.register('home-page', require('bundle-loader?lazy!../home-page/home-page'));
         ko.components.register('my-work', require('bundle-loader?lazy!../my-work/my-work'));
+        ko.components.register('oakwood', require('bundle-loader?lazy!../oakwood/oakwood'));
+        ko.components.register('skraach', require('bundle-loader?lazy!../skraach/skraach'));
         ko.components.register('fetch-data', require('bundle-loader?lazy!../fetch-data/fetch-data'));
     }
 

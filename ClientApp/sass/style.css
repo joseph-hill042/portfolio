@@ -41,6 +41,20 @@ p {
   100% {
     transform: scale(1, 1); } }
 
+/* The typing animation effect */
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+/* The typewriter cursor animation effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: orange; } }
+
 .main-nav li {
   font-size: 1.125em; }
   .main-nav li a:hover {
@@ -95,11 +109,80 @@ p {
   font-size: 3.25em;
   color: cornflowerblue; }
 
-.my-work__portfolio-grid .container {
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%; }
+.my-work {
+  padding: 20px; }
+  .my-work__portfolio-section {
+    padding: 30px; }
+    .my-work__portfolio-section .portfolio-item {
+      padding: 10px 10px; }
+    .my-work__portfolio-section .btn {
+      margin-top: 10px; }
+
+.project__image-grid-area {
+  padding: 0 20px; }
+  .project__image-grid-area .project-description {
+    padding: 20px 0; }
+  .project__image-grid-area .fa-ul {
+    padding: 0 40px; }
+    .project__image-grid-area .fa-ul .fa-li {
+      color: #6495ed; }
+    .project__image-grid-area .fa-ul li {
+      padding: 0 0 10px;
+      font-size: 1.25em; }
+  .project__image-grid-area .typewriter-heading {
+    padding: 10px 20px; }
+    .project__image-grid-area .typewriter-heading h4 {
+      font-family: 'Fira Code';
+      overflow: hidden;
+      /* Ensures the content is not revealed until the animation */
+      border-right: .15em solid orange;
+      /* The typwriter cursor */
+      white-space: nowrap;
+      /* Keeps the content on a single line */
+      margin: 0 auto;
+      /* Gives that scrolling effect as the typing happens */
+      letter-spacing: .15em;
+      /* Adjust as needed */
+      animation: typing 8.5s steps(30, end) infinite, blink-caret 0.5s step-end infinite; }
+
+.project a {
+  text-decoration-color: #f67f21;
+  text-decoration-style: double;
+  text-decoration-skip: ink; }
+
+.project h2 {
+  color: #6495ed; }
+
+.project h3 {
+  margin-top: 10px; }
+
+.project h4 {
+  color: #6495ed; }
+
+.project .project-logo-img {
+  margin-left: 10px;
+  width: 60px;
+  height: 60px; }
+
+.project .project-icon-img {
+  max-width: 80px;
+  display: inline; }
 
 .container-fluid {
   padding-left: 0 !important;
   padding-right: 0 !important; }
+
+.carousel .carousel-indicators li {
+  border: 1px solid #6495ed; }
+  .carousel .carousel-indicators li.active {
+    background-color: #6495ed; }
+
+.carousel .carousel-control .glyphicon {
+  color: #6495ed; }
+
+.carousel .carousel-control.left {
+  background-image: none !important; }
+
+.carousel .carousel-control.right {
+  background-image: none !important; }
 
