@@ -166,7 +166,14 @@ p {
 
 .project .project-icon-img {
   max-width: 80px;
-  display: inline; }
+  display: inline;
+  margin: 0 10px; }
+
+.skraach a {
+  text-decoration-color: #bb2025; }
+
+.skraach .skraach-logo {
+  border-radius: 50%; }
 
 .container-fluid {
   padding-left: 0 !important;
